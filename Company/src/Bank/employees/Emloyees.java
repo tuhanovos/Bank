@@ -1,9 +1,7 @@
-package Bank.emploees;
+package Bank.employees;
 
-public class Emloees {
+public class Emloyees {
     String emploee;
-    int a = 567727;
-    String s = "Sobachii her";
 
     public String getEmploee() {
         return emploee;
