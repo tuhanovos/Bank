@@ -2,6 +2,7 @@ package Emploees;
 
 public class Emloees {
     String emploee;
+    int age;
 
     public String getEmploee() {
         return emploee;
