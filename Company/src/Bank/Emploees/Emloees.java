@@ -2,7 +2,7 @@ package Bank.Emploees;
 
 public class Emloees {
     String emploee;
-int a =5;
+int a =56;
     public String getEmploee() {
         return emploee;
     }
