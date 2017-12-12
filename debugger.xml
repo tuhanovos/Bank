@@ -63,8 +63,12 @@
     </filter>
   </component>
   <component name="XDebuggerSettings">
-    <data-views />
-    <general />
+    <data-views>
+      <show-values-inline>false</show-values-inline>
+    </data-views>
+    <general>
+      <unmute-on-stop>true</unmute-on-stop>
+    </general>
     <debuggers>
       <debugger id="kotlin_debugger">
         <configuration>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_bank" default="compile.module.bank">
+  <dirname property="module.bank.basedir" file="${ant.file.module_bank}"/>
+  
+  <property name="module.jdk.home.bank" value="${jdk.home.intellij_idea_iu-173.3727.127}"/>
+  <property name="module.jdk.bin.bank" value="${jdk.bin.intellij_idea_iu-173.3727.127}"/>
+  <property name="module.jdk.classpath.bank" value="jdk.classpath.intellij_idea_iu-173.3727.127"/>
+  
+  <property name="compiler.args.bank" value="-encoding UTF-8 -source 1.8 -target 1.8 ${compiler.args}"/>
+  
+  <property name="bank.output.dir" value="${module.bank.basedir}/../out/production/Bank"/>
+  <property name="bank.testoutput.dir" value="${module.bank.basedir}/../out/test/Bank"/>
+  
+  <path id="bank.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="bank.module.production.classpath">
+    <path refid="${module.jdk.classpath.bank}"/>
+  </path>
+  
+  <path id="bank.runtime.production.module.classpath">
+    <pathelement location="${bank.output.dir}"/>
+  </path>
+  
+  <path id="bank.module.classpath">
+    <path refid="${module.jdk.classpath.bank}"/>
+    <pathelement location="${bank.output.dir}"/>
+  </path>
+  
+  <path id="bank.runtime.module.classpath">
+    <pathelement location="${bank.testoutput.dir}"/>
+    <pathelement location="${bank.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.bank">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.bank">
+    <patternset refid="excluded.from.module.bank"/>
+  </patternset>
+  
+  
+  <target name="compile.module.bank" depends="compile.module.bank.production,compile.module.bank.tests" description="Compile module Bank"/>
+  
+  <target name="compile.module.bank.production" depends="register.custom.compilers" description="Compile module Bank; production classes"/>
+  
+  <target name="compile.module.bank.tests" depends="register.custom.compilers,compile.module.bank.production" description="compile module Bank; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.bank" description="cleanup module">
+    <delete dir="${bank.output.dir}"/>
+    <delete dir="${bank.testoutput.dir}"/>
+  </target>
+</project>
