@@ -2,7 +2,8 @@ package Emploees;
 
 public class Emloees {
     String emploee;
-int a =56827;
+    int a = 567727;
+
     public String getEmploee() {
         return emploee;
     }
