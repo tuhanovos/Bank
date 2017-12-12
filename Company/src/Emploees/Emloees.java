@@ -1,4 +1,4 @@
-package Bank.Emploees;
+package Emploees;
 
 public class Emloees {
     String emploee;
