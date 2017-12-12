@@ -2,8 +2,8 @@ package Bank.emploees;
 
 public class Emloees {
     String emploee;
-    int a = 567727
-            String s = "Sobachii her";
+    int a = 567727;
+    String s = "Sobachii her";
 
     public String getEmploee() {
         return emploee;
