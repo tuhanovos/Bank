@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane minHeight="600" minWidth="800" scaleShape="false" xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUIBank.InfoBank">
+    <children>
+        <MenuBar cache="true" layoutY="-1.0" layoutX="0" prefHeight="25.0" prefWidth="810.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Войти">
+                </Menu>
+                <Menu mnemonicParsing="false" text="Профиль">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Редактировать"/>
+                        <MenuItem mnemonicParsing="false" text="Мои счета"/>
+                        <MenuItem mnemonicParsing="false" text="Кредиты"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="true" text="О Банке">
+                </Menu>
+            </menus>
+        </MenuBar>
+    </children>
+</AnchorPane>

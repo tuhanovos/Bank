@@ -1,0 +1,9 @@
+<application>
+  <component name="ParameterNameHintsSettings">
+    <blacklists>
+      <blacklist language="Java">
+        <added pattern="Bank.AboutBank.BankInformation.BankInformation(companyName,bossBank,legalAddress,postalAddress,expenseMFR,correspondentAccount,bik,inn)" />
+      </blacklist>
+    </blacklists>
+  </component>
+</application>
