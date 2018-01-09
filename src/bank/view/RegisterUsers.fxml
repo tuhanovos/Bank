@@ -14,7 +14,7 @@ and open the template in the editor.
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" onMouseClicked="#initialize" prefHeight="417.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.view.RegisterUsers">
+<fx:root id="AnchorPane" prefHeight="417.0" prefWidth="400.0" type="AnchorPane" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ListView layoutX="50.0" layoutY="38.0" prefHeight="300.0" prefWidth="300.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
       <Label layoutX="50.0" layoutY="38.0" text="ФИО" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="38.0" />
@@ -29,6 +29,6 @@ and open the template in the editor.
       <TextField layoutX="46.0" layoutY="261.0" prefWidth="200.0" AnchorPane.leftAnchor="100.0" />
       <Label layoutX="43.0" layoutY="295.0" text="Пароль" AnchorPane.leftAnchor="100.0" />
       <PasswordField layoutX="46.0" layoutY="312.0" prefWidth="200.0" AnchorPane.leftAnchor="100.0" />
-      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="86.0" layoutY="358.0" mnemonicParsing="false" onKeyPressed="#initialize" text="Зарегистрироваться" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="135.0" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="86.0" layoutY="358.0" mnemonicParsing="false" text="Зарегистрироваться" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="135.0" />
    </children>
-</AnchorPane>
+</fx:root>
